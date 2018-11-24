@@ -1,0 +1,8 @@
+@import '../Helpers/_mixin.scss';
+@include mediaSm{
+    
+    .myNav{
+        display: none;
+    }
+    
+}

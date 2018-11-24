@@ -1,0 +1,365 @@
+.myGap {
+    width: 100%;
+}
+
+.color{
+    width:95%;
+    height: 100%;
+    background-color: $color-blue;
+}
+.myContent {
+    margin-top: 80px;
+    margin-left:50px;
+    border-left: 3px solid $color-blue;
+    position: relative;
+    padding: unset;
+    
+    .myCircle {
+        width: 120px;
+        height: 120px;
+        border: 3px solid $color-blue;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        top:-60px;
+        left:-60px;
+        z-index:10;
+    }
+    #myIntro {
+        border-bottom: 3px solid $color-blue;
+        @include flex(column, '', flex-end);
+        .hello {
+            font-size: 2rem;
+            width: 90%;
+            border-bottom: 0.5px solid $color-blue;
+        }
+        .intro {
+            width: 90%;
+            h5 {
+                padding: 10px 0 20px;
+                margin: unset;
+                font-size: 0.8rem;
+            }
+            p {
+                font-size: 0.8rem;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    #myProfile {
+        position: relative;
+        padding-top: 30px;
+        .header {
+            position: absolute;
+            width: 100%;
+            top: -30px;
+            ;
+            @include flex(row, flex-end, '');
+            .headerContent {
+                width: 80%;
+                font-size: 2rem;
+                padding-left: $pd-2;
+                background-color: $color-white
+            }
+        }
+        .profileContent {
+            @include flex(column, '', flex-end);
+            border-bottom: 3px solid $color-blue;
+            padding-bottom: 40px;
+            .item {
+                margin-bottom: $mg-1;
+                width: 90%;
+                h4 {
+                    color: $color-blue;
+                }
+                p {
+                    border-top: 1px solid #f2f2f2;
+                    font-weight: bold;
+                    i {
+                        color: $color-blue;
+                        margin: 5px $mg-1 0 0;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    #myEdu {
+        position: relative;
+        padding-top: 30px;
+        .header {
+            position: absolute;
+            width: 100%;
+            top: -30px;
+            ;
+            @include flex(row, flex-end, '');
+            .headerContent {
+                width: 80%;
+                font-size: 2rem;
+                padding-left: $pd-2;
+                background-color: $color-white
+            }
+        }
+        .eduContent {
+            @include flex(column, '', flex-end);
+            border-bottom: 3px solid $color-blue;
+            padding-bottom: 40px;
+            .item {
+                margin-bottom: $mg-1;
+                width: 90%;
+                h4,
+                .item_content {
+                    color: $color-blue;
+                }
+                .item_content {
+                    padding: 5px 15px;
+                    p {
+                        color: black;
+                        border-top: 1px solid #f2f2f2;
+                    }
+                }
+            }
+        }
+    }
+    #myExp {
+        position: relative;
+        padding-top: 30px;
+        .header {
+            position: absolute;
+            width: 100%;
+            top: -30px;
+            @include flex(row, flex-end, '');
+            .headerContent {
+                width: 80%;
+                font-size: 2rem;
+                padding-left: $pd-2;
+                background-color: $color-white
+            }
+        }
+        .expContent {
+            @include flex(column, '', flex-end);
+            border-bottom: 3px solid $color-blue;
+            padding-bottom: 40px;
+            .item {
+                margin-bottom: $mg-1;
+                width: 90%;
+                h4,
+                .item_content {
+                    color: $color-blue;
+                }
+                .item_content {
+                    padding: 5px 15px;
+                    p {
+                        color: black;
+                        border-top: 1px solid #f2f2f2;
+                    }
+                }
+            }
+        }
+    }
+    #mySkill {
+        position: relative;
+        padding-top: 30px;
+        .header {
+            position: absolute;
+            width: 100%;
+            top: -30px;
+            @include flex(row, flex-end, '');
+            .headerContent {
+                width: 80%;
+                font-size: 2rem;
+                padding-left: $pd-2;
+                background-color: $color-white
+            }
+        }
+        .skillContent {
+            @include flex(column, '', flex-end);
+            border-bottom: 3px solid $color-blue;
+            padding-bottom: 40px;
+            .item {
+                margin-bottom: $mg-1;
+                width: 90%;
+                h4,
+                .item_content {
+                    color: $color-blue;
+                    .col{
+                        float: left;
+                        width: 50%;
+                        .skill{
+                            @include flex(row,center,center);
+                            p{
+                                width: 35%;
+                                margin: unset;
+                            }
+                           .progress{
+                                width: 65%;
+                            height: 5px;
+                            border:1px solid $color-blue;                               
+                                .colorHTML{
+                                    @extend .color;
+                                    width: 100%;
+                                }
+                                .colorCSS{
+                                    @extend .color;
+                                    width: 90%;
+                                }
+                                .colorSASS{
+                                    @extend .color;
+                                    width: 100%;
+                                }
+                                .colorBootstrap{
+                                    @extend .color;
+                                    width: 90%;
+                                }
+                                .colorJquery{
+                                    @extend .color;
+                                    width: 90%;
+                                }
+                                .colorJS{
+                                    @extend .color;
+                                    width: 95%;
+                                }
+                                .colorWebpack{
+                                    @extend .color;
+                                    width: 75%;
+                                }
+                                .colorAngular{
+                                    @extend .color;
+                                    width: 85%;
+                                }
+                                .colorReact{
+                                    @extend .color;
+                                    width: 85%;
+                                }
+                                .colorRedux{
+                                    @extend .color;
+                                    width: 85%;
+                                }
+                                .colorEnglish{
+                                    @extend .color;
+                                    width: 90%;
+                                }
+                                .colorVN{
+                                    @extend .color;
+                                    width: 100%;
+                                }
+                                .colorFinnish{
+                                    @extend .color;
+                                    width: 10%;
+                                }
+                            }
+                        }
+                    }
+                    .clear-float{
+                       clear:both;
+                    }
+                }
+            }
+        }
+    }
+   
+    #myInterest {
+        position: relative;
+        padding-top: 30px;
+        color: $color-blue;
+        .header {
+            position: absolute;
+            width: 100%;
+            top: -30px;
+            ;
+            @include flex(row, flex-end, '');
+            .headerContent {
+                width: 80%;
+                font-size: 2rem;
+                padding-left: $pd-2;
+                background-color: $color-white
+            }
+        }
+        .interestContent {
+            @include flex(column, '', flex-end);
+            border-bottom: 3px solid $color-blue;
+            padding-bottom: 40px;
+            .item {
+                margin-bottom: $mg-1;
+                width: 90%;
+               
+                p {
+                    border-top: 1px solid #f2f2f2;
+                    
+                    color: black;
+                }
+            }
+        }
+    }
+    #myProject {
+        position: relative;
+        padding-top: 30px;
+        color: $color-blue;
+        .header {
+            position: absolute;
+            width: 100%;
+            top: -30px;
+            ;
+            @include flex(row, flex-end, '');
+            .headerContent {
+                width: 80%;
+                font-size: 2rem;
+                padding-left: $pd-2;
+                background-color: $color-white
+            }
+        }
+        .projectContent {
+            @include flex(column, '', flex-end);
+            border-bottom: 3px solid $color-blue;
+            padding-bottom: 40px;
+            .myItem {
+                margin-bottom: $mg-1;
+                width: 90%;
+                padding-right:$pd-2;
+                padding-top: $pd-4;
+               img{
+                   border:1px solid $color-blue;
+               }
+               .owl-dots{
+                   display: none;
+               }
+                 
+            }
+        }
+    }
+
+    #myContact {
+        position: relative;
+        padding-top: 30px;
+        color: $color-blue;
+        .header {
+            position: absolute;
+            width: 100%;
+            top: -30px;
+            ;
+            @include flex(row, flex-end, '');
+            .headerContent {
+                width: 80%;
+                font-size: 2rem;
+                padding-left: $pd-2;
+                background-color: $color-white
+            }
+        }
+        .contactContent {
+            @include flex(column, '', flex-end);
+            border-bottom: 3px solid $color-blue;
+            padding-bottom: 40px;
+            .myItem {
+                margin-bottom: $mg-1;
+                width: 90%;
+               
+                 
+            }
+        }
+    }
+
+}

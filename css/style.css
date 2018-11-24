@@ -1,0 +1,753 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-sizing: border-box;
+  position: relative; }
+
+::placeholder {
+  opacity: 1;
+  /* Firefox */ }
+
+@media screen and (max-width: 500px) {
+  .myNav {
+    display: none; } }
+.myNav {
+  height: 100vh;
+  width: 100%;
+  background-color: #00b4f9;
+  padding: unset;
+  position: fixed; }
+  .myNav .brand h1 {
+    color: white;
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 40px auto 5px;
+    border: 2px solid white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px; }
+  .myNav .brand p {
+    color: white;
+    font-size: 0.8rem; }
+  .myNav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75%;
+    padding: unset;
+    margin: unset; }
+    .myNav ul a {
+      width: 100%;
+      text-decoration: none; }
+      .myNav ul a li {
+        list-style: none;
+        width: 100%;
+        border-bottom: 0.5px solid white;
+        color: white;
+        padding-bottom: 5px; }
+        .myNav ul a li i {
+          margin: 0 15px 0 30px;
+          color: white; }
+
+.myGap {
+  width: 100%; }
+
+.color, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorHTML,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorHTML, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorCSS,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorCSS, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorSASS,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorSASS, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorBootstrap,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorBootstrap, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorJquery,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorJquery, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorJS,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorJS, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorWebpack,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorWebpack, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorAngular,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorAngular, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorReact,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorReact, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorRedux,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorRedux, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorEnglish,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorEnglish, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorVN,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorVN, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorFinnish,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorFinnish {
+  width: 95%;
+  height: 100%;
+  background-color: #00adef; }
+
+.myContent {
+  margin-top: 80px;
+  margin-left: 50px;
+  border-left: 3px solid #00adef;
+  position: relative;
+  padding: unset; }
+  .myContent .myCircle {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #00adef;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    z-index: 10; }
+  .myContent #myIntro {
+    border-bottom: 3px solid #00adef;
+    display: flex;
+    flex-direction: column;
+    justify-content: "";
+    align-items: flex-end; }
+    .myContent #myIntro .hello {
+      font-size: 2rem;
+      width: 90%;
+      border-bottom: 0.5px solid #00adef; }
+    .myContent #myIntro .intro {
+      width: 90%; }
+      .myContent #myIntro .intro h5 {
+        padding: 10px 0 20px;
+        margin: unset;
+        font-size: 0.8rem; }
+      .myContent #myIntro .intro p {
+        font-size: 0.8rem;
+        margin-bottom: 50px; }
+  .myContent #myProfile {
+    position: relative;
+    padding-top: 30px; }
+    .myContent #myProfile .header {
+      position: absolute;
+      width: 100%;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: ""; }
+      .myContent #myProfile .header .headerContent {
+        width: 80%;
+        font-size: 2rem;
+        padding-left: 20px;
+        background-color: white; }
+    .myContent #myProfile .profileContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: "";
+      align-items: flex-end;
+      border-bottom: 3px solid #00adef;
+      padding-bottom: 40px; }
+      .myContent #myProfile .profileContent .item {
+        margin-bottom: 10px;
+        width: 90%; }
+        .myContent #myProfile .profileContent .item h4 {
+          color: #00adef; }
+        .myContent #myProfile .profileContent .item p {
+          border-top: 1px solid #f2f2f2;
+          font-weight: bold; }
+          .myContent #myProfile .profileContent .item p i {
+            color: #00adef;
+            margin: 5px 10px 0 0;
+            font-size: 2rem; }
+  .myContent #myEdu {
+    position: relative;
+    padding-top: 30px; }
+    .myContent #myEdu .header {
+      position: absolute;
+      width: 100%;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: ""; }
+      .myContent #myEdu .header .headerContent {
+        width: 80%;
+        font-size: 2rem;
+        padding-left: 20px;
+        background-color: white; }
+    .myContent #myEdu .eduContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: "";
+      align-items: flex-end;
+      border-bottom: 3px solid #00adef;
+      padding-bottom: 40px; }
+      .myContent #myEdu .eduContent .item {
+        margin-bottom: 10px;
+        width: 90%; }
+        .myContent #myEdu .eduContent .item h4,
+        .myContent #myEdu .eduContent .item .item_content {
+          color: #00adef; }
+        .myContent #myEdu .eduContent .item .item_content {
+          padding: 5px 15px; }
+          .myContent #myEdu .eduContent .item .item_content p {
+            color: black;
+            border-top: 1px solid #f2f2f2; }
+  .myContent #myExp {
+    position: relative;
+    padding-top: 30px; }
+    .myContent #myExp .header {
+      position: absolute;
+      width: 100%;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: ""; }
+      .myContent #myExp .header .headerContent {
+        width: 80%;
+        font-size: 2rem;
+        padding-left: 20px;
+        background-color: white; }
+    .myContent #myExp .expContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: "";
+      align-items: flex-end;
+      border-bottom: 3px solid #00adef;
+      padding-bottom: 40px; }
+      .myContent #myExp .expContent .item {
+        margin-bottom: 10px;
+        width: 90%; }
+        .myContent #myExp .expContent .item h4,
+        .myContent #myExp .expContent .item .item_content {
+          color: #00adef; }
+        .myContent #myExp .expContent .item .item_content {
+          padding: 5px 15px; }
+          .myContent #myExp .expContent .item .item_content p {
+            color: black;
+            border-top: 1px solid #f2f2f2; }
+  .myContent #mySkill {
+    position: relative;
+    padding-top: 30px; }
+    .myContent #mySkill .header {
+      position: absolute;
+      width: 100%;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: ""; }
+      .myContent #mySkill .header .headerContent {
+        width: 80%;
+        font-size: 2rem;
+        padding-left: 20px;
+        background-color: white; }
+    .myContent #mySkill .skillContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: "";
+      align-items: flex-end;
+      border-bottom: 3px solid #00adef;
+      padding-bottom: 40px; }
+      .myContent #mySkill .skillContent .item {
+        margin-bottom: 10px;
+        width: 90%; }
+        .myContent #mySkill .skillContent .item h4,
+        .myContent #mySkill .skillContent .item .item_content {
+          color: #00adef; }
+          .myContent #mySkill .skillContent .item h4 .col,
+          .myContent #mySkill .skillContent .item .item_content .col {
+            float: left;
+            width: 50%; }
+            .myContent #mySkill .skillContent .item h4 .col .skill,
+            .myContent #mySkill .skillContent .item .item_content .col .skill {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center; }
+              .myContent #mySkill .skillContent .item h4 .col .skill p,
+              .myContent #mySkill .skillContent .item .item_content .col .skill p {
+                width: 35%;
+                margin: unset; }
+              .myContent #mySkill .skillContent .item h4 .col .skill .progress,
+              .myContent #mySkill .skillContent .item .item_content .col .skill .progress {
+                width: 65%;
+                height: 5px;
+                border: 1px solid #00adef; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorHTML,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorHTML {
+                  width: 100%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorCSS,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorCSS {
+                  width: 90%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorSASS,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorSASS {
+                  width: 100%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorBootstrap,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorBootstrap {
+                  width: 90%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorJquery,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorJquery {
+                  width: 90%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorJS,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorJS {
+                  width: 95%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorWebpack,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorWebpack {
+                  width: 75%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorAngular,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorAngular {
+                  width: 85%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorReact,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorReact {
+                  width: 85%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorRedux,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorRedux {
+                  width: 85%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorEnglish,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorEnglish {
+                  width: 90%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorVN,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorVN {
+                  width: 100%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorFinnish,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorFinnish {
+                  width: 10%; }
+          .myContent #mySkill .skillContent .item h4 .clear-float,
+          .myContent #mySkill .skillContent .item .item_content .clear-float {
+            clear: both; }
+  .myContent #myInterest {
+    position: relative;
+    padding-top: 30px;
+    color: #00adef; }
+    .myContent #myInterest .header {
+      position: absolute;
+      width: 100%;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: ""; }
+      .myContent #myInterest .header .headerContent {
+        width: 80%;
+        font-size: 2rem;
+        padding-left: 20px;
+        background-color: white; }
+    .myContent #myInterest .interestContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: "";
+      align-items: flex-end;
+      border-bottom: 3px solid #00adef;
+      padding-bottom: 40px; }
+      .myContent #myInterest .interestContent .item {
+        margin-bottom: 10px;
+        width: 90%; }
+        .myContent #myInterest .interestContent .item p {
+          border-top: 1px solid #f2f2f2;
+          color: black; }
+  .myContent #myProject {
+    position: relative;
+    padding-top: 30px;
+    color: #00adef; }
+    .myContent #myProject .header {
+      position: absolute;
+      width: 100%;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: ""; }
+      .myContent #myProject .header .headerContent {
+        width: 80%;
+        font-size: 2rem;
+        padding-left: 20px;
+        background-color: white; }
+    .myContent #myProject .projectContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: "";
+      align-items: flex-end;
+      border-bottom: 3px solid #00adef;
+      padding-bottom: 40px; }
+      .myContent #myProject .projectContent .myItem {
+        margin-bottom: 10px;
+        width: 90%;
+        padding-right: 20px;
+        padding-top: 4%; }
+        .myContent #myProject .projectContent .myItem img {
+          border: 1px solid #00adef; }
+        .myContent #myProject .projectContent .myItem .owl-dots {
+          display: none; }
+  .myContent #myContact {
+    position: relative;
+    padding-top: 30px;
+    color: #00adef; }
+    .myContent #myContact .header {
+      position: absolute;
+      width: 100%;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: ""; }
+      .myContent #myContact .header .headerContent {
+        width: 80%;
+        font-size: 2rem;
+        padding-left: 20px;
+        background-color: white; }
+    .myContent #myContact .contactContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: "";
+      align-items: flex-end;
+      border-bottom: 3px solid #00adef;
+      padding-bottom: 40px; }
+      .myContent #myContact .contactContent .myItem {
+        margin-bottom: 10px;
+        width: 90%; }
+
+.myMain {
+  width: 100%;
+  float: right; }
+
+.myGap {
+  width: 100%; }
+
+.color, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorHTML,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorHTML, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorCSS,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorCSS, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorSASS,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorSASS, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorBootstrap,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorBootstrap, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorJquery,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorJquery, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorJS,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorJS, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorWebpack,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorWebpack, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorAngular,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorAngular, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorReact,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorReact, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorRedux,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorRedux, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorEnglish,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorEnglish, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorVN,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorVN, .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorFinnish,
+.myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorFinnish {
+  width: 95%;
+  height: 100%;
+  background-color: #00adef; }
+
+.myContent {
+  margin-top: 80px;
+  margin-left: 50px;
+  border-left: 3px solid #00adef;
+  position: relative;
+  padding: unset; }
+  .myContent .myCircle {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #00adef;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    z-index: 10; }
+  .myContent #myIntro {
+    border-bottom: 3px solid #00adef;
+    display: flex;
+    flex-direction: column;
+    justify-content: "";
+    align-items: flex-end; }
+    .myContent #myIntro .hello {
+      font-size: 2rem;
+      width: 90%;
+      border-bottom: 0.5px solid #00adef; }
+    .myContent #myIntro .intro {
+      width: 90%; }
+      .myContent #myIntro .intro h5 {
+        padding: 10px 0 20px;
+        margin: unset;
+        font-size: 0.8rem; }
+      .myContent #myIntro .intro p {
+        font-size: 0.8rem;
+        margin-bottom: 50px; }
+  .myContent #myProfile {
+    position: relative;
+    padding-top: 30px; }
+    .myContent #myProfile .header {
+      position: absolute;
+      width: 100%;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: ""; }
+      .myContent #myProfile .header .headerContent {
+        width: 80%;
+        font-size: 2rem;
+        padding-left: 20px;
+        background-color: white; }
+    .myContent #myProfile .profileContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: "";
+      align-items: flex-end;
+      border-bottom: 3px solid #00adef;
+      padding-bottom: 40px; }
+      .myContent #myProfile .profileContent .item {
+        margin-bottom: 10px;
+        width: 90%; }
+        .myContent #myProfile .profileContent .item h4 {
+          color: #00adef; }
+        .myContent #myProfile .profileContent .item p {
+          border-top: 1px solid #f2f2f2;
+          font-weight: bold; }
+          .myContent #myProfile .profileContent .item p i {
+            color: #00adef;
+            margin: 5px 10px 0 0;
+            font-size: 2rem; }
+  .myContent #myEdu {
+    position: relative;
+    padding-top: 30px; }
+    .myContent #myEdu .header {
+      position: absolute;
+      width: 100%;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: ""; }
+      .myContent #myEdu .header .headerContent {
+        width: 80%;
+        font-size: 2rem;
+        padding-left: 20px;
+        background-color: white; }
+    .myContent #myEdu .eduContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: "";
+      align-items: flex-end;
+      border-bottom: 3px solid #00adef;
+      padding-bottom: 40px; }
+      .myContent #myEdu .eduContent .item {
+        margin-bottom: 10px;
+        width: 90%; }
+        .myContent #myEdu .eduContent .item h4,
+        .myContent #myEdu .eduContent .item .item_content {
+          color: #00adef; }
+        .myContent #myEdu .eduContent .item .item_content {
+          padding: 5px 15px; }
+          .myContent #myEdu .eduContent .item .item_content p {
+            color: black;
+            border-top: 1px solid #f2f2f2; }
+  .myContent #myExp {
+    position: relative;
+    padding-top: 30px; }
+    .myContent #myExp .header {
+      position: absolute;
+      width: 100%;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: ""; }
+      .myContent #myExp .header .headerContent {
+        width: 80%;
+        font-size: 2rem;
+        padding-left: 20px;
+        background-color: white; }
+    .myContent #myExp .expContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: "";
+      align-items: flex-end;
+      border-bottom: 3px solid #00adef;
+      padding-bottom: 40px; }
+      .myContent #myExp .expContent .item {
+        margin-bottom: 10px;
+        width: 90%; }
+        .myContent #myExp .expContent .item h4,
+        .myContent #myExp .expContent .item .item_content {
+          color: #00adef; }
+        .myContent #myExp .expContent .item .item_content {
+          padding: 5px 15px; }
+          .myContent #myExp .expContent .item .item_content p {
+            color: black;
+            border-top: 1px solid #f2f2f2; }
+  .myContent #mySkill {
+    position: relative;
+    padding-top: 30px; }
+    .myContent #mySkill .header {
+      position: absolute;
+      width: 100%;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: ""; }
+      .myContent #mySkill .header .headerContent {
+        width: 80%;
+        font-size: 2rem;
+        padding-left: 20px;
+        background-color: white; }
+    .myContent #mySkill .skillContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: "";
+      align-items: flex-end;
+      border-bottom: 3px solid #00adef;
+      padding-bottom: 40px; }
+      .myContent #mySkill .skillContent .item {
+        margin-bottom: 10px;
+        width: 90%; }
+        .myContent #mySkill .skillContent .item h4,
+        .myContent #mySkill .skillContent .item .item_content {
+          color: #00adef; }
+          .myContent #mySkill .skillContent .item h4 .col,
+          .myContent #mySkill .skillContent .item .item_content .col {
+            float: left;
+            width: 50%; }
+            .myContent #mySkill .skillContent .item h4 .col .skill,
+            .myContent #mySkill .skillContent .item .item_content .col .skill {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center; }
+              .myContent #mySkill .skillContent .item h4 .col .skill p,
+              .myContent #mySkill .skillContent .item .item_content .col .skill p {
+                width: 35%;
+                margin: unset; }
+              .myContent #mySkill .skillContent .item h4 .col .skill .progress,
+              .myContent #mySkill .skillContent .item .item_content .col .skill .progress {
+                width: 65%;
+                height: 5px;
+                border: 1px solid #00adef; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorHTML,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorHTML {
+                  width: 100%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorCSS,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorCSS {
+                  width: 90%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorSASS,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorSASS {
+                  width: 100%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorBootstrap,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorBootstrap {
+                  width: 90%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorJquery,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorJquery {
+                  width: 90%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorJS,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorJS {
+                  width: 95%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorWebpack,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorWebpack {
+                  width: 75%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorAngular,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorAngular {
+                  width: 85%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorReact,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorReact {
+                  width: 85%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorRedux,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorRedux {
+                  width: 85%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorEnglish,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorEnglish {
+                  width: 90%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorVN,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorVN {
+                  width: 100%; }
+                .myContent #mySkill .skillContent .item h4 .col .skill .progress .colorFinnish,
+                .myContent #mySkill .skillContent .item .item_content .col .skill .progress .colorFinnish {
+                  width: 10%; }
+          .myContent #mySkill .skillContent .item h4 .clear-float,
+          .myContent #mySkill .skillContent .item .item_content .clear-float {
+            clear: both; }
+  .myContent #myInterest {
+    position: relative;
+    padding-top: 30px;
+    color: #00adef; }
+    .myContent #myInterest .header {
+      position: absolute;
+      width: 100%;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: ""; }
+      .myContent #myInterest .header .headerContent {
+        width: 80%;
+        font-size: 2rem;
+        padding-left: 20px;
+        background-color: white; }
+    .myContent #myInterest .interestContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: "";
+      align-items: flex-end;
+      border-bottom: 3px solid #00adef;
+      padding-bottom: 40px; }
+      .myContent #myInterest .interestContent .item {
+        margin-bottom: 10px;
+        width: 90%; }
+        .myContent #myInterest .interestContent .item p {
+          border-top: 1px solid #f2f2f2;
+          color: black; }
+  .myContent #myProject {
+    position: relative;
+    padding-top: 30px;
+    color: #00adef; }
+    .myContent #myProject .header {
+      position: absolute;
+      width: 100%;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: ""; }
+      .myContent #myProject .header .headerContent {
+        width: 80%;
+        font-size: 2rem;
+        padding-left: 20px;
+        background-color: white; }
+    .myContent #myProject .projectContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: "";
+      align-items: flex-end;
+      border-bottom: 3px solid #00adef;
+      padding-bottom: 40px; }
+      .myContent #myProject .projectContent .myItem {
+        margin-bottom: 10px;
+        width: 90%;
+        padding-right: 20px;
+        padding-top: 4%; }
+        .myContent #myProject .projectContent .myItem img {
+          border: 1px solid #00adef; }
+        .myContent #myProject .projectContent .myItem .owl-dots {
+          display: none; }
+  .myContent #myContact {
+    position: relative;
+    padding-top: 30px;
+    color: #00adef; }
+    .myContent #myContact .header {
+      position: absolute;
+      width: 100%;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: ""; }
+      .myContent #myContact .header .headerContent {
+        width: 80%;
+        font-size: 2rem;
+        padding-left: 20px;
+        background-color: white; }
+    .myContent #myContact .contactContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: "";
+      align-items: flex-end;
+      border-bottom: 3px solid #00adef;
+      padding-bottom: 40px; }
+      .myContent #myContact .contactContent .myItem {
+        margin-bottom: 10px;
+        width: 90%; }
+
+/*# sourceMappingURL=style.css.map */

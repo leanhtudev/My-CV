@@ -1,0 +1,55 @@
+
+.myNav {
+    height: 100vh;
+    width: 100%;
+    background-color: lighten($color-blue,2);
+    padding: unset;
+    
+    position: fixed;
+    
+    .brand {
+        h1 {
+            color: $color-white;
+            height: 50px;
+            font-size: 1.5rem;
+            @include flex(row,center,center);
+            width: 70%;
+            margin: $mg-4 auto 5px;
+            border: 2px solid $color-white;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+        }
+        p{
+            color: $color-white;
+            font-size: 0.8rem;
+        }
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 75%;
+        padding: unset;
+        margin: unset;
+        a{
+            width: 100%;
+            text-decoration: none;
+            li {
+                list-style: none;
+                width: 100%;
+                border-bottom: 0.5px solid white;
+                color: white;
+                padding-bottom: $pd-0;
+                i {
+                    margin: 0 15px 0 30px;
+                    color: $color-white;
+                }
+            }
+        }
+        
+    }
+}
