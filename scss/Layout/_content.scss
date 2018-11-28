@@ -356,7 +356,14 @@
             .myItem {
                 margin-bottom: $mg-1;
                 width: 90%;
-               
+               .myCol{
+                   text-align: center;
+                  width: 100%;
+                   @include flex(column,space-between,"");
+                   textarea{
+                       width: 100%;
+                   }
+               }
                  
             }
         }

@@ -401,6 +401,15 @@
       .myContent #myContact .contactContent .myItem {
         margin-bottom: 10px;
         width: 90%; }
+        .myContent #myContact .contactContent .myItem .myCol {
+          text-align: center;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: ""; }
+          .myContent #myContact .contactContent .myItem .myCol textarea {
+            width: 100%; }
 
 .myMain {
   width: 100%;
@@ -749,5 +758,14 @@
       .myContent #myContact .contactContent .myItem {
         margin-bottom: 10px;
         width: 90%; }
+        .myContent #myContact .contactContent .myItem .myCol {
+          text-align: center;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: ""; }
+          .myContent #myContact .contactContent .myItem .myCol textarea {
+            width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
